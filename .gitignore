@@ -1,0 +1,10 @@
+# Compiled class file
+*.class
+
+# OS Files
+.DS_Store
+
+# Eclipse
+.project
+.classpath
+
