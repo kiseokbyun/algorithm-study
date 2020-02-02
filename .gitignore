@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+/bin/
 
 # OS Files
 .DS_Store
@@ -7,4 +8,3 @@
 # Eclipse
 .project
 .classpath
-
