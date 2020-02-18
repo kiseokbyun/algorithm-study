@@ -1,4 +1,4 @@
-package algorithmStudy.dp;
+package algorithmStudy.algospot.lis;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package algorithmStudy.dp;
+package algorithmStudy.programmers.integerTriangle;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;

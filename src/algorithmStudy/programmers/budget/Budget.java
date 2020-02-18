@@ -1,4 +1,4 @@
-package algorithmStudy.binarySearch;
+package algorithmStudy.programmers.budget;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
