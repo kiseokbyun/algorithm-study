@@ -1,4 +1,4 @@
-package algorithmStudy.baekjoon;
+package algorithmStudy.baekjoon.week0;
 
 import java.io.BufferedReader;
 import java.io.IOException;

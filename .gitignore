@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
-/bin/
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
 
 # OS Files
 .DS_Store
