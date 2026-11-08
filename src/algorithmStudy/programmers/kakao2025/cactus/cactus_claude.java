@@ -1,4 +1,4 @@
-package algorithmStudy.programmers.cactus;
+package algorithmStudy.programmers.kakao2025.cactus;
 
 import static org.junit.Assert.assertArrayEquals;
 

@@ -1,4 +1,4 @@
-package algorithmStudy.programmers.cactus;
+package algorithmStudy.programmers.kakao2025.cactus;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -102,12 +102,6 @@ public class cactus {
         check(new int[]{0, 2}, solution(4, 4, 3, 1, drops));
     }
 
-
-    private void print(int[][] arrays) {
-        for (int[] array : arrays) {
-            System.out.println(Arrays.toString(array));
-        }
-    }
     private void check(int[] expected, int[] result) {
         System.out.println("result = " + Arrays.toString(result) + ", expected = " + Arrays.toString(expected));
         assertArrayEquals(expected, result);
