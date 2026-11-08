@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+group = 'algorithmStudy'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+// 풀이 코드와 @Test 메서드가 같은 파일에 있으므로 src/ 를 main 소스셋으로 사용
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'org.hamcrest:hamcrest-library:1.3'
+    implementation 'org.assertj:assertj-core:3.16.1'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// src/ 의 @Test 메서드를 gradle test 로 실행
+test {
+    useJUnit()
+    testClassesDirs = sourceSets.main.output.classesDirs
+    classpath = sourceSets.main.runtimeClasspath
+
+    // System.out 출력과 각 테스트 결과를 콘솔에 표시
+    testLogging {
+        showStandardStreams = true
+        events 'passed', 'failed'
+        exceptionFormat = 'full'
+    }
+}

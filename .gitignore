@@ -14,3 +14,10 @@ out/
 # Eclipse
 .project
 .classpath
+
+# Gradle
+.gradle/
+build/
+
+# IDE build output
+bin/
